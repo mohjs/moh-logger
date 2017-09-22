@@ -1,5 +1,6 @@
 const test = require('ava')
-const { debug, info, warn, error } = require('../')
+const debug = require('../').debug('logger-test')
+const { info, warn, error } = require('../')
 
 // Log string info
 test('can log debug into', t => {
